@@ -55,11 +55,17 @@ namespace CursoUDYWebApp
 
             app.UseRouting();
 
+            app.UseCookiePolicy();
+
             app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapAreaControllerRoute(
+                    name: "MyAreaPrincipak",
+                    areaName: "Principal",
+                    pattern: "Principal/{controller=Principal}/{action=Index}/{id?}");
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");

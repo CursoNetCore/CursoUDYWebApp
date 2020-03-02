@@ -15,4 +15,14 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.1" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <Folder Include="Areas\Categoria\Controllers\" />
+    <Folder Include="Areas\Categoria\Data\" />
+    <Folder Include="Areas\Categoria\Models\" />
+    <Folder Include="Areas\Categoria\Views\" />
+    <Folder Include="Areas\Principal\Data\" />
+    <Folder Include="Areas\Principal\Models\" />
+  </ItemGroup>
+
 </Project>
